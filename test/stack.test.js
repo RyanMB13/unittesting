@@ -3,6 +3,11 @@ class Stack{
         this.top = -1
         this.items = []
     }
+
+    push(item) {
+        this.top += 1;
+        this.items[this.top] = item;
+    }
 }
 
 describe('My Stack', () => {
