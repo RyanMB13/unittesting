@@ -17,4 +17,10 @@ describe('My Stack', () => {
         expect(stack.top).toBe(-1);
         expect(stack.items).toEqual([]);
     });
+
+    it('pushes an item to the stack', () => {
+        stack.push('roiryan');
+        expect(stack.items).toEqual(['roiryan']);
+        expect(stack.top).toBe(0);
+    });
 });
